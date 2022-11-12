@@ -1,4 +1,5 @@
 import 'package:api/Pages/HomePage.dart';
+import 'package:api/Pages/SecoundAPI_CustomModel.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      // home: HomePage(),
+      home: SecoundAPI_CustomModel(),
     );
   }
 }
