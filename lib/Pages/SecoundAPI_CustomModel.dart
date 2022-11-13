@@ -54,7 +54,7 @@ class _SecoundAPI_CustomModelState extends State<SecoundAPI_CustomModel> {
               builder: (context, AsyncSnapshot<List<Photos>> snapshot) {
                 //if data is not avalible
                 if (!snapshot.hasData) {
-                  return Center(
+                  return const Center(
                     child:
                         CircularProgressIndicator(backgroundColor: Colors.red),
                   );
@@ -78,8 +78,7 @@ class _SecoundAPI_CustomModelState extends State<SecoundAPI_CustomModel> {
                             ),
 
                             //for title
-                            title: Text("Id No is : " +
-                                snapshot.data![index].id.toString()),
+                            title: Text("Id No is : ${snapshot.data![index].id}"),
 
                             //for Subtitle
                             subtitle:
