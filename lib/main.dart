@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'Pages/Third_ComplexAPI.dart';
 import 'Pages/VeryComplexJsone.dart';
+import 'Pages/WithOutModel.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
       // home: HomePage(),
       // home: SecoundAPI_CustomModel(),
       // home: ComplexAPICall(),
-      home: VeryComplexJsone(),
+      // home: VeryComplexJsone(),
+      home: WithOutModel(),
     );
   }
 }
